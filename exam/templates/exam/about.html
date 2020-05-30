@@ -1,0 +1,980 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>E-LITERATE </title>
+<!--css code of deep-->
+  <style>
+#img{
+    position: absolute;
+    top: 4%;
+    left: 7%;
+    /* border: 2px solid blue;  */
+    /* margin: 10px; */
+    /* padding: 20px; */
+    height: 60px;
+    width: 150px;
+    /* border: 2px solid tomato; */
+    border-radius:10px;
+
+
+}
+
+.textContainer{
+
+    position: absolute;
+    top: 50%;
+     /* left: 33%;  */
+    /* color: white; */
+    /* color: #2f2f; */
+    width: 100%;
+
+}
+.heading14{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 60px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+.heading15{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+.container2{
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,1); */
+    background-image: linear-gradient(90deg,white,skyblue);
+    margin: 30px;
+    padding: 30px;
+}
+.container2:hover{
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+    background-image: linear-gradient(90deg,white,skyblue);
+    margin: 30px;
+    padding: 30px;
+}
+
+.aboutus{
+    margin: 20px;
+    /* padding: 100px; */
+}
+.exambar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.exambarhead{
+    display: inline-block;
+    margin: auto;
+    font-family:'Quicksand', sans-serif;
+    cursor: pointer;
+
+}
+
+.exambarhead:hover{
+    color:tomato;
+}
+
+
+.grid{
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+
+.gridchild{
+    margin: 35px;
+    /* border: 2px solid black; */
+    height: 100px;
+    width: 250px;
+    display: flex;
+    cursor: pointer;
+    background: #2f2f;
+}
+.gridchild:hover{
+     margin: 35px;
+    border: 1px solid black;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    cursor: pointer;
+    background: #2f2f;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+
+}
+.logo{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid black;  */
+
+}
+#image3{
+    height: 100%;
+    width: 100px;
+}
+.logotitle{
+    position: relative;
+    top: 0%;
+    left: -10%;
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid black; */
+    text-align: center;
+    padding-top: 20px;
+    padding-left:15px ;
+    font-family:'Quicksand', sans-serif;
+
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.heading9{
+    text-align: center;
+    font-size: 50px;
+    /* letter-spacing: 5px; */
+        font-family: 'Quicksand', sans-serif;
+}
+.heading2{
+    text-align: center;
+    padding: 40px;
+    font-family:'Quicksand', sans-serif ;
+
+}
+.heading3{
+    text-align: center;
+    color: black;
+    /* background:rgb(255, 173, 173);
+     */
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+
+}
+.heading4{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.container3{
+    margin: 50px;
+    padding: 10px;
+}
+.container4{
+    /* position: relative;
+    top: 10px; */
+    /* margin: 20px; */
+    left: 0%;
+    /* width: 80%; */
+}
+.heading5{
+     margin: 40px;
+    padding: 20px;
+    border: 2px solid black;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    /* width: 90%; */
+    text-align: center;
+
+}
+.container6{
+    /* border: 2px solid red; */
+   /* background: tomato; */
+   height: 450px;
+   width: 100%;
+    white-space: nowrap;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.heading0{
+     text-align: center;
+    padding: 10px;
+    font-family:'Quicksand', sans-serif ;
+}
+#image2{
+    display: inline-block;
+    margin: auto;
+    white-space: nowrap;
+    height: 450px;
+    width: 40%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+.container6::-webkit-scrollbar{
+    display: none;
+}
+.container7{
+   border: 2px solid black;
+    margin-left:50px;
+    padding: 20px;
+    display: inline-block;
+    width: 55%;
+}
+.container9{
+   border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 35%;
+}
+
+.hr{
+    margin: 20px;
+}
+.container10{
+    height: 100vh;
+    background:  #17202A;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container11{
+    position: relative;
+    top: 10%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+
+}
+.heading10{
+    padding: 5px;
+}
+.container12{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container13{
+    border: 1px solid black;
+    margin: 20px;
+    width: 30%;
+    padding: 2%;
+    height: 50%;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8); */
+    /* display: inline-block; */
+    /* flex-wrap: wrap; */
+
+}
+.container13:hover{
+     border: 1px solid black;
+    margin: 20px;
+    width: 30%;
+    padding: 2%;
+    height: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+}
+.heading11{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.container14{
+    position: relative;
+    top: 0px;
+    display: inline-flex;
+    margin: 2%;
+    /* padding: 2%; */
+    /* border: 2px solid black; */
+    width: 45%;
+     height: 100%;
+    }
+.ul{
+     display: inline-block;
+    padding: 10px;
+    margin: 8px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.list{
+    padding: 2px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+
+}
+
+.container15{
+     border: 1px solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    height: 300px;
+
+}
+#image4{
+    height: 300px;
+    width: 100%;
+}
+.heading12{
+    font-size: 55px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 30px;
+
+
+}
+#smallnavbar{
+    display: none;
+    /* display: inline; */
+    position: absolute;
+    left: 88%;
+}
+#cross{
+    display: none;
+}
+#noticeContainer{
+    height: 60%;
+    width: 50%;
+    background-color: tomato;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+#deletNoticeBox{
+    display: inline-block;
+    position: relative;
+    left: 93%;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); */
+}
+.heading13{
+    text-align: center;
+}
+@media(max-width:1024px){
+.navbar{
+     display:none;
+}
+#smallnavbar{
+    display: inline;
+   position: absolute;
+   left: 75%;
+}
+.textContainer{
+
+ position: absolute;
+    top: 40%;
+    width: 100%;
+    /* left: 0%; */
+}
+.heading14{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  width: 100%;
+
+}
+.heading15{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.heading9{
+    text-align: center;
+    font-size: 40px;
+    /* letter-spacing: 5px; */
+        font-family: 'Quicksand', sans-serif;
+}
+.container2{
+    background-image: linear-gradient(90deg,white,skyblue);
+    margin: 0px;
+    padding: 10px;
+}
+.aboutus{
+    margin: 0px;
+    padding: 20px;
+}
+.para{
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.heading2,.heading3{
+    text-align: center;
+    padding: 5px;
+    font-family:'Quicksand', sans-serif ;
+}
+.container3{
+    margin: 0px;
+    padding: 10px;
+}
+.heading5{
+     margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    width: 90%;
+}
+.heading4{
+    position: relative;
+    top: 0px;
+    text-align: center;
+    padding: 10px;
+     font-family:'Quicksand', sans-serif ;
+}
+.container4{
+    position: relative;
+    top: 10px;
+    /* margin: 20px; */
+    left: 0%;
+}
+#container5{
+    padding: 0px;
+}
+.container6{
+
+    height: 450px;
+    margin: 0px;
+    padding: 0px;
+
+}
+#image2{
+    height: 75vh;
+    width: 100%;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px;
+}
+.container7{
+   /* border: 2px solid black; */
+    margin-left:0px;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    font-size: 20px;
+}
+.container9{
+   /* border: 2px solid black; */
+    margin: 0px;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    line-height: 30px;
+    font-size: 20px;
+}
+.container12{
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    /* padding: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.container13{
+    border: 2px solid black;
+    margin: 3px;
+    width: 100%;
+    height: 100%;
+    /* padding: 2%; */
+    /* display: inline-block; */
+    /* flex-wrap: wrap; */
+
+}
+.container13:hover{
+    border: 2px solid black;
+    margin: 3px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+
+    /* padding: 2%; */
+    /* display: inline-block; */
+    /* flex-wrap: wrap; */
+
+}
+.container14{
+    position: relative;
+    top: 0px;
+     display: inline;
+    /* margin: 2%; */
+    /* padding: 2%; */
+    /* border: 2px solid black; */
+    width: 100%;
+    /* height: 50%; */
+    }
+
+.container10{
+    height: 100vh;
+    background:  #17202A;
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+.container11{
+    position: relative;
+    top: 5%;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.dropdown .dropbtn {
+  font-size: 26px;
+  border: none;
+  outline: none;
+  color: white;
+   padding: 0px 2px;
+  background-color:#17202A;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a {
+  float: left;
+  font-size: 26px;
+  color:white;
+  text-align: center;
+  padding: 0px 2px;
+  text-decoration: none;
+  background-color: #17202A;
+  font-family: 'Quicksand', sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  /* background-color: #333; */
+  font-family: Arial;
+  height: 260px;
+  overflow: scroll;
+}
+#noticeContainer{
+    height: 60%;
+    width: 80%;
+    background-color: tomato;
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+
+#deletNoticeBox{
+    display: inline-block;
+    position: relative;
+    left: 90%;
+}
+
+/* ============================ */
+/* SOCIAL ICONS                 */
+/* ============================ */
+
+$color-base: #00B285
+$num-buttons: 7
+$speed: 0.6s
+
+.social-icon
+  @include prefixer(background-clip, padding-box, webkit moz spec)
+  @include box-sizing(border-box)
+  @include border-radius(3px)
+
+  @include transition-property(background-color)
+  @include transition-duration(0.5s)
+  @include transition-timing-function(ease)
+
+  background-color: #c4c4c4
+  text-align: center
+  display: inline-block
+  width: 40px
+  height: 38px
+  padding: 9px 0px
+  color: white
+  margin: 2px
+
+  /* Color each button differently */
+  @for $i from 1 through $num-buttons
+    &:nth-child(#{$i})
+      /* Animation */
+      @include fadeInRight($speed, ($i/4) * 1s )
+      opacity: 0
+      /* Color */
+      &:hover,
+      &:active,
+      &:focus
+        opacity: 1
+        background-color: adjust-hue( $color-base, $i * 7%)
+
+  img
+    width: 20px
+
+/* ============================ */
+/* TOOLTIP                      */
+/* ============================ */
+
+$tooltip-height: 22px
+$tooltip-arrow-size: 5px
+$tooltip-color: #323232
+$tooltip-color-text: #ecf0f1
+
+[data-tooltip]
+  position: relative
+
+  &:before,
+  &:after
+    @include transform(translateX(-50%))
+    @include box-sizing(content-box)
+    @include position(absolute, 100% null null 50%)
+
+    @include transition-property(opacity)
+    @include transition-duration(0.2s)
+    @include transition-timing-function(linear)
+
+    position: absolute
+    left: 50%
+    top: 100%
+    bottom: 100%
+    visibility: hidden
+    opacity: 0
+    z-index: 9999
+    // Force Hardware Acceleration
+    -webkit-transform: translate3d(0, 0, 0)
+    -moz-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+  /* tooltip arrow */
+  &:before
+    content: ''
+    border-color: $tooltip-color
+    border-style: none
+    border: $tooltip-arrow-size solid transparent
+    border-bottom: $tooltip-arrow-size +1px solid $tooltip-color
+    margin-top: $tooltip-arrow-size * -1 + 1
+
+  /* tooltip box */
+  &:after
+    content: attr(data-tooltip)
+    @include border-radius(3px)
+    width: auto
+    height: $tooltip-height
+    padding: $tooltip-height/2 $tooltip-height/2 0 $tooltip-height/2
+    font-size: 130px
+    line-height: $tooltip-height/2
+    white-space: nowrap
+    background-color: $tooltip-color
+    color: $tooltip-color-text
+    margin-top: 7px
+
+  &:hover,
+  &:focus
+    background-color: transparent
+    &:before,
+    &:after
+      @include transform(translate(-50%, 0))
+      opacity: 1
+      visibility: visible
+
+
+}
+
+
+}
+.heading13{
+    text-align: center;
+}
+.teamcontainer{
+    /* border: 2px solid black; */
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(0deg,white,skyblue);
+
+}
+.teamcontainerchild{
+    height: 50px;
+    width: 100vw;
+    /* width: 30%; */
+    display: inline-block;
+    /* border: 2px solid black; */
+    margin: 20px;
+}
+.teamcontainerchild1{
+    height: 250px;
+    /* width: 100vw; */
+    width: 30%;
+    display: inline-block;
+    /* border: 2px solid black; */
+    margin: 20px;
+    /* background-image: linear-gradient(0deg,white,skyblue); */
+
+}
+.teamcontainerheading{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.teamimage{
+    position: relative;
+    left: 125px;
+    top: -40px;
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+
+}
+.teamimage:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+
+
+  </style>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
+  </head>
+ <body>
+
+
+ <!WHATS APP plugin>
+       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+       <div class="elfsight-app-83fd1fcd-6082-4803-a45f-c747320345c0"></div>
+
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <a class="navbar-brand" href="/exam/">E-LITERATE</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+
+      </li>
+        <a class="navbar-brand"  href="/exam/">HOME <span class="sr-only">(current)</span></a>
+      </li>
+
+        <li class="nav-item active">
+        <li class="nav-item dropdown">
+        <a class="navbar-brand"  href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PROGRAMS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">JEE</a>
+          <a class="dropdown-item" href="#">GATE</a>
+          <a class="dropdown-item" href="/port/project/">CAT</a>
+        </div>
+
+        <li class="nav-item">
+        <a class="navbar-brand" href="/exam/about/">ABOUT US</a>
+      </li>
+
+        <li class="nav-item">
+        <a class="navbar-brand" href="/exam/contact">CONTACT US</a>
+      </li>
+
+      <li class="nav-item">
+          <a href="/exam/rejister"> <button type="button" class="btn btn-outline-success my-2 my-sm-0">REGISTER</button>
+     </a>
+      </li>
+     </ul>
+	</div>
+
+  <!--slider-->
+    <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+
+</nav>
+
+
+<!--aboutus paragraph-->
+
+      <div class="card col-lg-12 " style="background-color:white;">
+          <div class="container2"  >
+    <center><h1> ABOUT US</h1></center>
+
+    <h4>E-LITERATE is India's largest Test series destination, loved by thousands of aspirants across the country.
+        Through our website, we help many students who are preparing actively for various exams & score better.</h4>
+
+    <h4>At our heart lies the belief that people prepare better when they prepare together;
+        by questioning, helping & challenging each other.
+        Hence at the very core of our being lies a community of students . Established in the year 2020,
+         E-LITERATE belongs to Times Internet.
+         We have established & nurtured highly engaging exam-specific communities of students and mentors for JEE, GATE, CAT.
+    <h4>The E-LITERATE community lets users collectively Compete each other through mock tests at a national level.
+        It gives them access to mock test & previous years papers to score better in their exams.</h4>
+
+    <h4> We also appreciate the value of structured preparation, not just the quantity of it but also the approach.
+         It is only by preparing actively everyday & making small but significant
+         headways can one ensure continuous improvement.</h4>
+       </div>
+      </div>
+
+
+
+
+<!--our team-->
+
+ <br>
+<div class="container2">
+ <CENTER><H1>OUR FOUNDERS</H1></CENTER></div>
+        <!-- section-4 -->
+    <!-- this is another container -->
+        <!-- section-5 -->
+        <div class="container12">
+            <div class="container13">
+                <div class="container15">
+                    <img src="{%static 'exam/shobhit.jpg' %}" alt="image" id='image4'>
+                </div>
+                <h1 class='heading11'>SHOBHIT GUPTA</h1>
+                <h2> Technical Head</h2>
+                <h3> Contact No.-9140408069</h3>
+
+            </div>
+            <div class="container13">
+                <div class="container15">
+                    <img src="{%static 'exam/logo.jpg' %}" alt="image" id='image4'>
+                </div>
+                <h1 class='heading11'>E-LITERATE</h1>
+                <h3> Where Knowledge Shines</h3>
+
+
+            </div>
+           <div class="container13">
+                <div class="container15">
+                    <img src="{%static 'exam/harshit.jpg' %}" alt="image" id='image4'>
+                </div>
+                <h3 class='heading11'>HARSHIT MANI TRIPATHI</h3>
+                <h2> Managerial Head</h2>
+                <h3> Contact No.-7355927812</h3>
+
+            </div>
+
+        </div>
+        <hr class='hr'>
+
+ <!-- for founder and team -->
+
+            <div class="teamcontainer">
+
+                <div class="teamcontainerchild">
+                    <h1 class="teamcontainerheading">OUR TEAM</h1>
+                </div>
+
+                <div class="teamcontainerchild1">
+  </br>
+                    <img src="{%static 'exam/deep.jpg' %}" alt="" class="teamimage">
+                    <h3 class='teamcontainerheading'>DEEPANSHU KATIYAR</h3>
+                    <h5 class='teamcontainerheading'>Front End Developer</h5>
+
+                </div>
+                <div class="teamcontainerchild1">
+                      </br>
+                    <img src="{%static 'exam/ayush.jpg' %}" alt="" class="teamimage">
+                    <h2 class='teamcontainerheading'>Ayush Srivastava</h2>
+                    <h5 class='teamcontainerheading'>Media And Advertisment
+                        </h5>
+                </div>
+                <div class="teamcontainerchild1">
+                      </br>
+                    <img src="{%static 'exam/pawan.jpg' %}" alt="" class="teamimage">
+                    <h2 class='teamcontainerheading'>Pawan Kumar</h2>
+                    <h5 class='teamcontainerheading'>Sales and Advertisment</h5>
+                </div>
+            </div>
+
+
+
+     <!-- for contact us container -->
+
+
+        <div class="container10">
+                <h1 id='contactus' class='heading12'>Contact us</h1>
+
+            <div class="container11">
+            <i class="fas fa-book-open fa-7x"></i>
+                <h1 class='heading10'>E-Literate</h1>
+                <h4 class='heading10'>E-Literate Pvt.Ltd.</h3>
+                    <h4 class='heading10'>0259-N humayunpur north</h3>
+                        <h4 class='heading10'>Gorakhpur</h3>
+                            <h4 class='heading10'>Uttar Pradesh 201303</h3>
+                                <h4 class='heading10'>support@e-literate.com</h3>
+
+                                    <!-- social networking site-->
+
+                                  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+<div class="social">
+
+  <a class="social-icon" data-tooltip="email@gmail.com" href="mailto:email@gmail.com">
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+  </a>
+
+  <a class="social-icon" data-tooltip="GitHub" href="https://github.com/puikinsh">
+    <i class="fa fa-github" aria-hidden="true"></i>
+  </a>
+
+  <a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/company/colorlib">
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+  </a>
+
+  <a class="social-icon" data-tooltip="Twitter" href="https://twitter.com/colorlib">
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+  </a>
+
+  <a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/colorlib">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+  </a>
+
+  <a class="social-icon" data-tooltip="YouTube" href="https://www.youtube.com/">
+    <i class="fa fa-youtube" aria-hidden="true"></i>
+  </a>
+  <a class="social-icon" data-tooltip="YouTube" href="https://instagram.com/Colorlib">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+  </a>
+         <!--socia networking site-->
+           </div>
+            </div>
+
+
+
+
+        <hr class='hr'>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

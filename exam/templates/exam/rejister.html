@@ -1,0 +1,131 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>E-LITERATE </title>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
+  </head>
+  <center >
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <a class="navbar-brand" href="/exam/">E-LITERATE</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+
+      </li>
+        <a class="navbar-brand"  href="/exam/">HOME <span class="sr-only">(current)</span></a>
+      </li>
+
+
+
+
+
+
+
+        <li class="nav-item">
+        <a class="navbar-brand" href="/exam/program/">PROGRAMS</a>
+      </li>
+
+
+
+
+      <li class="nav-item">
+        <a class="navbar-brand" href="/exam/about/">ABOUT US</a>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a class="navbar-brand" href="/exam/contact">CONTACT US</a>
+      </li>
+
+
+     </ul>
+	</div>
+
+  <!--slider-->
+
+   <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+
+</nav>
+
+<body>
+
+
+     <!WHATS APP plugin>
+
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+       <div class="elfsight-app-83fd1fcd-6082-4803-a45f-c747320345c0"></div>
+
+
+
+      <div class="container my-3">
+    <h3>REGISTRATION FORM</h3>
+    <form action="/exam/rejister/" method="post">{% csrf_token %}
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name" required>
+  </div>;
+  <div class="form-group">
+    <label for="name">Email</label>
+    <input type="email" class="form-control" id="email" name='email' placeholder="Enter Your Email" required>
+  </div>
+
+ <div class="form-group">
+    <label for="exampleFormControlSelect1">Gender</label>
+    <select type="gender" class="form-control" id="gender" name='gender' placeholder="gender" required >
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+  </div>
+
+        <div class="form-group">
+    <label for="exampleFormControlSelect1">Cources</label>
+    <select type="cources" class="form-control" id="cources" name='cources' placeholder="cource name" required>
+      <option>JEE MAINS</option>
+      <option>CAT</option>
+        <option>GATE</option>
+    </select>
+  </div>
+
+    <div class="form-group">
+    <label for="name">Phone</label>
+    <input type="tel" class="form-control" id="phone" name='phone' placeholder="Enter Your Phone Number" required>
+  </div>
+
+
+   <div class="form-group">
+    <label for="name">Address</label>
+    <input type="address" class="form-control" id="address" name='address' placeholder="Enter your full address" required>
+  </div>
+
+       <a href="/exam/success"> <button type="submit" class="btn btn-success">Submit</button></a>
+</form>
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
